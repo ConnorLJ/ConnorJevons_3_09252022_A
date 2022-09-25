@@ -4,4 +4,4 @@ Project 3 on OpenClassrooms. Integrate a mobile website with animations in CSS f
 
 ## First Steps
 
-First steps on the project include setting up Git & Github.
+The first steps on the project include setting up Git & Github.
