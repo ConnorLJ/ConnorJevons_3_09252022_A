@@ -1,0 +1,20 @@
+html body {
+    font-family: $font-primary;
+}
+
+.header {
+    &__location {
+        font-size: 0.9rem;
+    }
+  &__title {
+    font-weight: 700;
+    font-size: .7rem;
+  }
+  &__subtitle {
+    font-size: 1rem;
+    opacity: 50%;
+  }
+  &__btn {
+    font-size: 1rem;
+  }
+}

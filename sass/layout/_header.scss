@@ -1,25 +1,30 @@
-.header {
-    display: flex;
-    justify-content: center;
-
-    .header__logo {
-        font-family: Shrikhand, raleway;
-        padding-top: 20px;
-    }
+header {
+    text-align: center;
 }
 
-.location {
-    display: flex;
-    justify-content: center;
-    font-size: 16px;
-    font-family: roboto, sans-serif;
-
-
-    .location__icon {
-        color: black;
-
+.header {
+    &__logo {
+        height: 1.6rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem
     }
-    .location__text {
-
+    &__location {
+        @include flex-centre;
+        background-color: darken($color: $background-color, $amount: 5%);
+        box-shadow: 0 1.5px 5px rgba(0, 0, 0, .2) inset;
+        i {
+            padding-right: 1rem;
+        }
+    }
+    &__explore {
+    background-color: $background-color;
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    height: 18rem;
+    }
+    &__title {
+    }
+    &__subtitle {
     }
 }
