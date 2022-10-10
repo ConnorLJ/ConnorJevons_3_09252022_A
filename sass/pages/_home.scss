@@ -1,12 +1,19 @@
-.header {
-    &__location {
-    
-}
-&__title {
-    padding-top: 1rem;
-}
-&__subtitle {
+/* booking section */
 
+.booking {
+    background-color: $background-color;
+    height: 18rem;
+    padding-top: 3rem;
+
+    &__info {
+        @include flex-between;
+        flex-direction: column;
+        height: 100%;
+        text-align: center;
+        gap: 1rem;
+
+    }
 }
-}
+
+/* How it works section */
 

@@ -1,35 +1,68 @@
 <!DOCTYPE html>
 <link lang="en">
 
-<link>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="./css/style.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shrikhand">
-<script src="https://kit.fontawesome.com/d7d305f5eb.js" crossorigin="anonymous"></script>
-<title>ohmyfood</title>
+<head>
+  <link>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shrikhand">
+  <script src="https://kit.fontawesome.com/d7d305f5eb.js" crossorigin="anonymous"></script>
+  <title>ohmyfood</title>
 </head>
 
-<header>
-  <div class="container">
-    <img class="header__logo" src="public/img/logo/ohmyfood@2x.svg" alt="ohmyfood logo"></img>
-    <div class="header__location">
-      <p><i class="fa-solid fa-location-dot"></i>Paris, Belleville</p>
+<header class="header">
+  <div class="header__container">
+    <div class="header__logo">
+      <img class="header__image" src="public/img/logo/ohmyfood@2x.svg" alt="ohmyfood logo"></img>
     </div>
-    <div class="header__explore">
-      <div class="header__title title">
-        <h1>Book the menu you like</h1>
-      </div>
-      <div class="header__subtitle subtitle">
-        <p>Discover top-of-the-art restaurants we <br>picked for you</p>
-      </div>
-      <div>
-        <button class="header__btn btn">Explore our restaurants</button>
-      </div>
+    <div class="header__location">
+      <i class="fa-solid fa-location-dot header__icon"></i>
+      <p class="header__location--text">Paris, Belleville</p>
     </div>
   </div>
+  </div>
 </header>
-<main>
+
+<section class="booking">
+  <div class="container">
+    <div class="booking__info">
+      <h1>Book the menu you like</h1>
+      <p>Discover top-of-the-art restaurants we <br>picked for you</p>
+      <button class="btn btn--gradient">Explore our restaurants</button>
+    </div>
+  </div>
+</section>
+
+<section class="explanation">
+  <div class="explanation__container">
+    <div>
+      <h2>How it works</h2>
+    </div>
+    <div class="buttons__container">
+      <button class="button explanation__card">
+        <div class="explanation__card-number">1</div>
+        <i class="fas fa-mobile-alt explanation__card-icon"></i>
+        <h3 class="explanation__card-text">Choose a restaurant</h3>
+      </button>
+
+      <button class="button explanation__card">
+        <p class="explanation__card-number">2</p>
+        <i class="fas fa-list-ul explanation__card-icon"></i>
+        <h3 class="explanation__card-text">Create your menu</h3>
+      </button>
+
+      <button class="button explanation__card primarycolor">
+        <p class="explanation__card-number">3</p>
+        <i class="fas fa-store explanation__card-icon explanation__card-icon primarycolor"></i>
+        <h3 class="explanation__card-text">Go enjoy it at the restaurant</h3>
+      </button>
+    </div>
+  </div>
+</section>
+
+<main class="restaurants">
+  
 </main>
 <footer>
 </footer>

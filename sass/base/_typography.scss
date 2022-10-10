@@ -2,19 +2,26 @@ html body {
     font-family: $font-primary;
 }
 
-.header {
-    &__location {
+.location {
         font-size: 0.9rem;
     }
-  &__title {
+
+ .booking {
+    h1 {
     font-weight: 700;
-    font-size: .7rem;
+    font-size: 1.5rem;
   }
-  &__subtitle {
-    font-size: 1rem;
+
+  p {
+    font-size: 1.2rem;
     opacity: 50%;
   }
-  &__btn {
+}
+  .btn--gradient {
     font-size: 1rem;
   }
-}
+
+  .explanation__card-text {
+    font-size: 1rem;
+  
+  }

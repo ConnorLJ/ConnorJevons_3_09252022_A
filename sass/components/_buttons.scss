@@ -1,10 +1,24 @@
 .btn {
-	background-image: linear-gradient($secondary-color 0%, $primary-color 100%);
-	border: 0px solid rgb(28, 110, 164);
-	border-radius: 3rem;
-    box-shadow: -1px 4px 10px 5px rgba(0, 0, 0, 0.15);
-    color: white;
-    height: 3.2rem;
-    width: 14rem;
-    border-radius: 3rem;
+    border-radius: 100px;
+    height: 3rem;
+    padding: 1rem 2rem;
+    border: none;
+    @include shadow;
+    transition: all 500ms;
+    outline: none;
+    cursor: pointer;
+    &:hover {
+        @include shadow-hover;
+    }
+    &--gradient {
+        color: $background-color;
+        background: linear-gradient(to bottom right, $primary-color, $secondary-color);
+        &hover {
+            background: linear-gradient(to bottom-right, lighten ($primary-color, 10%), lighten ($secondary-color, 10%));
+        }
+    }
+    &--order {
+        height: 5em;
+        padding: 1rem 7rem;
+    }
 }
