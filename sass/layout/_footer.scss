@@ -1,6 +1,20 @@
 .footer {
     background-color: darken($color: $background-color, $amount: 75%);
-    img {
-        font-size: 1rem;
+    &__logo {
+        font-size: 1.2rem;
+        color: white;
+        padding-left: 1rem;
     }
+    &__text {
+        font-family: $font-primary;
+        color: white;
+        width: 11rem;
+        line-height: 1rem;
+        padding-left: 1rem;
+    }
+
+}
+
+img {
+    font-size: 1rem;
 }
