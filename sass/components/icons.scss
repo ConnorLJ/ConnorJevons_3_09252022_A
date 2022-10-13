@@ -1,0 +1,9 @@
+.explanation__card-icon {
+    font-size: 1.5rem;
+    color: black;
+    opacity: 50%;
+    &.primarycolor {
+        color: $primary-color;
+        opacity: 100%;
+    }
+}

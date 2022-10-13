@@ -1,10 +1,57 @@
 .btn {
-	background-image: linear-gradient($secondary-color 0%, $primary-color 100%);
-	border: 0px solid rgb(28, 110, 164);
-	border-radius: 3rem;
-    box-shadow: -1px 4px 10px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 100px;
+    height: 3rem;
+    padding: 1rem 2rem;
+    border: none;
+    @include shadow;
+    transition: all 500ms;
+    outline: none;
+    cursor: pointer;
+    &:hover {
+        @include shadow-hover;
+    }
+    &--gradient {
+        color: $background-color;
+        background: linear-gradient(to top left, $primary-color, $secondary-color);
+        &hover {
+            background: linear-gradient(to bottom-right, lighten ($primary-color, 10%), lighten ($secondary-color, 10%));
+        }
+    }
+    &--order {
+        height: 5em;
+        padding: 1rem 7rem;
+    }
+}
+
+.explanation {
+    padding-bottom: 4rem;
+    &__card {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    height: 4.5rem;
+    width: 100%;
+    @include shadow;
+    border: none;
+    border-radius: $card-radius;
+    cursor: pointer;
+    &--number {
+    position: relative;
+    right: .9rem;
+    background-color: $primary-color;
+    border-radius: 50%;
     color: white;
-    height: 3.2rem;
-    width: 14rem;
-    border-radius: 3rem;
+    padding: .25rem .45rem;
+    }
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
+        width: 110%;
+         }
+
+    &.primarycolor {
+    background-color: rgba($primary-color, 0.2);
+        }
+    
+    }
 }

@@ -1,30 +1,23 @@
-header {
-    text-align: center;
-}
-
 .header {
     &__logo {
-        height: 1.6rem;
-        padding-top: 1rem;
-        padding-bottom: 1rem
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
+        @media screen and (min-width: map-get($breakpoints, desktop)) {
+            padding-left: 1rem;
+        }
     }
     &__location {
         @include flex-centre;
+        width: 100%;
         background-color: darken($color: $background-color, $amount: 5%);
-        box-shadow: 0 1.5px 5px rgba(0, 0, 0, .2) inset;
+        box-shadow: 0 1.5px 5px rgba (o, o, o, 1) inset;
+        @media screen and (min-width: map-get($breakpoints, desktop)) {
+            width: 200px;
+            border-radius: 1.5rem;
+            @include header-shadow;
+        }
         i {
             padding-right: 1rem;
         }
-    }
-    &__explore {
-    background-color: $background-color;
-    display: flex;
-    flex-direction: column;
-    gap: .75rem;
-    height: 18rem;
-    }
-    &__title {
-    }
-    &__subtitle {
-    }
+}
 }

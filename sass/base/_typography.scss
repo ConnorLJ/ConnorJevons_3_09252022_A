@@ -1,20 +1,44 @@
 html body {
-    font-family: $font-primary;
+  font-family: $font-primary;
 }
 
-.header {
-    &__location {
-        font-size: 0.9rem;
-    }
-  &__title {
+.location {
+  font-size: 0.9rem;
+}
+
+.booking {
+  h1 {
     font-weight: 700;
-    font-size: .7rem;
+    font-size: 1.5rem;
   }
-  &__subtitle {
-    font-size: 1rem;
+
+  p {
+    font-size: 1.2rem;
     opacity: 50%;
   }
-  &__btn {
-    font-size: 1rem;
+}
+
+.btn--gradient {
+  font-size: 1rem;
+}
+
+.explanation__card-text {
+  font-size: 1rem;
+
+}
+
+.restaurant__title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 0;
+}
+
+.restaurant {
+  &__banner {
+    &--text {
+      font-size: 14px;
+      color: darken($color: $tertiary-color, $amount: 40%);
+
+    }
   }
 }
