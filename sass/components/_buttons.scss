@@ -14,7 +14,7 @@
         color: $background-color;
         background: linear-gradient(to top left, $primary-color, $secondary-color);
         &hover {
-            background: linear-gradient(to bottom-right, lighten ($primary-color, 10%), lighten ($secondary-color, 10%));
+            background: linear-gradient(to bottom right, lighten ($primary-color, 10%), lighten ($secondary-color, 10%));
         }
     }
     &--order {
