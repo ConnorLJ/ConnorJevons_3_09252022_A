@@ -25,14 +25,20 @@
 
 .explanation {
     padding-bottom: 4rem;
+    &__text {
+        position: relative;
+        right: 6.5rem;
+        @media screen and (min-width: map-get($breakpoints, tablet)) {
+            position: static;
+        }
+    }
     &__card {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     align-items: center;
     gap: 1rem;
     height: 4.5rem;
-    width: 100%;
+    width: 20rem;
     @include shadow;
     border: none;
     border-radius: $card-radius;
@@ -46,7 +52,7 @@
     padding: .25rem .45rem;
     }
     @media screen and (min-width: map-get($breakpoints, tablet)) {
-        width: 110%;
+        width: 22rem;
          }
 
     &.primarycolor {

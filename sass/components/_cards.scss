@@ -1,18 +1,32 @@
 .restaurant {
     background-color: $background-color;
-
     &__cards {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        @media screen and (min-width: map-get($breakpoints, desktop)) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 85%;
+        padding-left: 0;
+        gap: 1rem;
+    }
+}
+
+    &__card {
         flex-direction: column;
         align-items: flex-start;
         background-color: $background-color;
         gap: 1rem;
-        width: 100%;
+        width: 21.5rem;
         height: 17rem;
         border-radius: 20px;
         box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 
         @media screen and (min-width: map-get($breakpoints, tablet)) {
-            width: 25rem;
+            width: 30rem;
         }
 
         @media screen and (min-width: map-get($breakpoints, desktop)) {
@@ -40,7 +54,12 @@
 
     &__title {
         padding-top: 2rem;
+        position: relative;
+        right: 6.5rem;
+        @media screen and (min-width: map-get($breakpoints, tablet)) {
+        position: static;
     }
+}
 
     .img {
         object-fit: cover;
@@ -60,7 +79,7 @@
         width: 5rem;
         border-radius: 5%;
         @media screen and (min-width: map-get($breakpoints, tablet)) {
-            left: 76.5%;
+            left: 79.5%;
         }
         @media screen and (min-width: map-get($breakpoints, desktop)) {
             left: 79.5%;
