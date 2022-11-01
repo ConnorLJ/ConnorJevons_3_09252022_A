@@ -43,6 +43,7 @@
     border: none;
     border-radius: $card-radius;
     cursor: pointer;
+    background-color: $background-color;
     &--number {
     position: relative;
     right: .9rem;

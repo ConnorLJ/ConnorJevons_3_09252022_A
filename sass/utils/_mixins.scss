@@ -25,3 +25,15 @@
 @mixin shadow-hover {
     box-shadow: 0 .8rem .8rem rgba(0, 0, 0, 0.2)
 }
+
+@mixin desktop-only {
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+
+    }
+}
+
+@mixin tablet-only {
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
+
+    }
+}

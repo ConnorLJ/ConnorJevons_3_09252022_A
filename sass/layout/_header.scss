@@ -2,22 +2,45 @@
     &__logo {
         padding-top: 1.5rem;
         padding-bottom: 1rem;
+
         @media screen and (min-width: map-get($breakpoints, desktop)) {
             padding-left: 1rem;
         }
     }
+
     &__location {
         @include flex-centre;
         width: 100%;
         background-color: darken($color: $background-color, $amount: 5%);
         box-shadow: 0 1.5px 5px rgba (o, o, o, 1) inset;
+
         @media screen and (min-width: map-get($breakpoints, desktop)) {
-            width: 200px;
+            width: 170px;
             border-radius: 1.5rem;
+            gap: 1rem;
             @include header-shadow;
         }
         i {
             padding-right: 1rem;
         }
-}
+    }
+
+    &__return {
+        @include flex-centre;
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
+    }
+    &__image{
+        order: 2;
+    }
+    &__icon  {
+        position: relative;
+        right: 8.5rem;
+        top: 5%;
+        order: 1;
+        font-size: 1.2rem;
+        @media screen and (min-width: map-get($breakpoints, desktop)) {
+            position: inherit;
+        }
+    }
 }
