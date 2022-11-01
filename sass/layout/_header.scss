@@ -20,9 +20,9 @@
             gap: 1rem;
             @include header-shadow;
         }
-        i {
-            padding-right: 1rem;
-        }
+        // i {
+        //     padding-right: 1rem;
+        // }
     }
 
     &__return {
@@ -35,7 +35,7 @@
     }
     &__icon  {
         position: relative;
-        right: 8.5rem;
+        right: 8rem;
         top: 5%;
         order: 1;
         font-size: 1.2rem;
