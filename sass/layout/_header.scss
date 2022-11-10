@@ -27,15 +27,17 @@
 
     &__return {
         @include flex-centre;
+        justify-content: flex-start;
+        align-items: center;
         padding-top: 1.5rem;
         padding-bottom: 1rem;
+        gap: 3.5rem;
     }
     &__image{
         order: 2;
     }
     &__icon  {
-        position: relative;
-        right: 8rem;
+        padding-left: 1rem;
         top: 5%;
         order: 1;
         font-size: 1.2rem;

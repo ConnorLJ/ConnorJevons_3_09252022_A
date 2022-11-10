@@ -16,19 +16,65 @@
     }
     }
     &__title {
-        background-color: #f7f7f7;
+        background-color: #eaeaea;
         position: relative;
-        z-index: 1;
         margin-top: -2.5rem;
         border-radius: 2.5rem 2.5rem 0 0;
         padding: 1rem 0rem;
     }
-    &__title-container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-        gap: 0rem;
-       
-    }
+}
+
+.selection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 0;
+    gap: .5rem;
+    padding-left: 1rem;
+    background-color: #eaeaea;
+    height: 25rem;
+    padding-right: 1rem;
+        &__card {
+            @include shadow;
+            background-color: white;
+            cursor: pointer;
+            border-style: none;
+            height: 4.5rem;
+            width: 339px;
+            border-radius: 15px;
+            }
+        &__text {
+            display: flex;
+            flex-direction: row;
+            padding-left: 1rem;
+            width: 306px;
+            &-container {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 262px;
+                height: 72px;
+            }
+            &-child1 {
+            }
+            &-child2 {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding-bottom: 1rem;
+                width: 100%;
+            }
+            &-desc {
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                display: inline-block;
+            }
+        }
+
+.selection__animation {
+    background-color: green;
+    transition: transform 330ms ease-in-out;
+}
 }
