@@ -14,8 +14,9 @@
 <body>
     <header class="header">
         <div class="header__return">
-            <img class="header__image" src="./public/img/logo/ohmyfood@2x.svg" alt="ohmyfood logo">
-
+            <div class="header__image">
+                <img class="header__image-logo" src="./public/img/logo/ohmyfood@2x.svg" alt="ohmyfood logo">
+            </div>
             <div class="header__icon">
                 <a href="./index.html"><i class="fa-sharp fa-solid fa-arrow-left"></i></a>
             </div>
@@ -40,8 +41,10 @@
         </div>
     </section>
     <main class="selection">
-        <h2 class="selection-title">ENTREES</h2>
         <div class="selection__container">
+            <div class="selection__subtitle">
+                <h2 class="selection-title">ENTREES</h2>
+            </div>
             <button class="selection__card">
                 <div class="selection__text">
                     <div class="selection__text-container">
@@ -57,53 +60,28 @@
                             </div>
                         </div>
                     </div>
-                    <div class="selection__animation">Hi Mum</div>
                 </div>
-                
+                <!-- <div class="selection__animation">Hi Mum</div> -->
+            </button>
+            <button class="selection__card">
+                <div class="selection__text">
+                    <div class="selection__text-container">
+                        <div class="selection__text-child1">
+                            <h3 class="selection__text--title">Duck Foie Gras</h3>
+                        </div>
+                        <div class="selection__text-child2">
+                            <div class="selection__text-desc">
+                                With black truffle shavings
+                            </div>
+                            <div class="selection__text-price">
+                                35€
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="selection__animation">Hi Mum</div> -->
+                </div>
             </button>
         </div>
-        <!-- <h2 class="selection-title">ENTREES</h2>
-        <div class="selection__container">
-            <button class="selection__card">
-                <div class="selection__text">
-                    <div class="selection__text-container">
-                        <div class="selection__text-child1">
-                            <h3 class="selection__text--title">Escargot</h3>
-                        </div>
-                        <div class="selection__text-child2">
-                            <div class="selection__text-desc">
-                                <span class="selection__text--desc">With southern French spices</span>
-                            </div>
-                            <div class="selection__text-price">
-                                <span class="selection__text--price">25€</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="selection__animation"></div>
-            </button>
-        </div> -->
-        <!-- <h2 class="selection-title">ENTREES</h2>
-        <div class="selection__container">
-            <button class="selection__card">
-                <div class="selection__text">
-                    <div class="selection__text-container">
-                        <div class="selection__text-child1">
-                            <h3 class="selection__text--title">Escargot</h3>
-                        </div>
-                        <div class="selection__text-child2">
-                            <div class="selection__text-desc">
-                                <span class="selection__text--desc">With southern French spices</span>
-                            </div>
-                            <div class="selection__text-price">
-                                <span class="selection__text--price">25€</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="selection__animation"></div>
-            </button>
-        </div> -->
     </main>
     <footer>
     </footer>

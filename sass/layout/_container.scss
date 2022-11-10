@@ -67,16 +67,23 @@
     @include flex-centre;
     justify-content: space-around;
     gap: 2rem;
-    
+
 }
 
 .selection {
     &__container {
         display: flex;
-        flex-direction: column;
-       align-items: center;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
         gap: 1rem;
-      width: 100%;
+        width: 100%;
+
+        @include tablet-only {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
 }
 

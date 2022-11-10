@@ -89,6 +89,18 @@ h1 {
 }
 
 .selection {
+  &__subtitle {
+    h2 {
+        &::after {
+            content: "";
+            display: block;
+            width: 2.7rem;
+            padding-top: 0.5rem;
+            padding-bottom: .3rem;
+            border-bottom: 0.2rem solid #99e2d0;
+        }
+    }
+}
   &-title {
     line-height: 0;
   }

@@ -1,28 +1,39 @@
 .menu {
-    background-color: #eaeaea;
+
     /*Menu top image */
     &__restaurant {
-        @include flex-centre;
-        &-image {
-            object-fit: cover;
-            width: 100%;
-            height: 16rem;
-            z-index: 0;
+        width: 100%;
 
-            @media screen and (min-width: map-get($breakpoints, tablet and desktop)) {
-                height: 20rem;
-                width: 500px;
+        @include tablet-only {
+            @include flex-centre;
+        }
+
+        &-image {
+            object-fit: contain;
+            width: 100%;
+            height: 18rem;
+
+            @include tablet-only {
+                width: 160rem;
+                height: 24em;
+
             }
+        }
     }
-    }
+
     &__title {
         background-color: #eaeaea;
         position: relative;
         margin-top: -2.5rem;
         border-radius: 2.5rem 2.5rem 0 0;
         padding: 1rem 0rem;
+
+        @include tablet-only {
+            border-radius: 4.5rem 4.5rem 0 0;
+        }
     }
 }
+
 
 .selection {
     display: flex;
@@ -34,47 +45,62 @@
     padding-left: 1rem;
     background-color: #eaeaea;
     height: 25rem;
-    padding-right: 1rem;
-        &__card {
-            @include shadow;
-            background-color: white;
-            cursor: pointer;
-            border-style: none;
-            height: 4.5rem;
-            width: 339px;
-            border-radius: 15px;
-            }
-        &__text {
+
+    &-title {
+        padding-right: 100rem;
+
+        @include tablet-only {
+            padding-right: 0;
+        }
+    }
+
+    &__card {
+        @include shadow;
+        background-color: white;
+        cursor: pointer;
+        border-style: none;
+        height: 4.5rem;
+        width: 339px;
+        border-radius: 15px;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: row;
+        padding-left: 1rem;
+        width: 306px;
+        margin: 0;
+
+        &-container {
             display: flex;
-            flex-direction: row;
-            padding-left: 1rem;
-            width: 306px;
-            &-container {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                width: 262px;
-                height: 72px;
-            }
-            &-child1 {
-            }
-            &-child2 {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                padding-bottom: 1rem;
-                width: 100%;
-            }
-            &-desc {
-                text-overflow: ellipsis;
-                overflow: hidden;
-                white-space: nowrap;
-                display: inline-block;
-            }
+            flex-direction: column;
+            align-items: flex-start;
+            width: 262px;
+            height: 72px;
         }
 
-.selection__animation {
-    background-color: green;
-    transition: transform 330ms ease-in-out;
-}
+        &-child1 {}
+
+        &-child2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 4rem;
+            padding-bottom: 1rem;
+            width: 100%;
+        }
+
+        &-desc {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            display: inline-block;
+        }
+    }
+
+    .selection__animation {
+        background-color: green;
+        transition: transform 330ms ease-in-out;
+    }
 }
