@@ -2,221 +2,139 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shrikhand">
-    <script src="https://kit.fontawesome.com/d7d305f5eb.js" crossorigin="anonymous"></script>
-    <title>ohmyfood</title>
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shrikhand" />
+    <script src="https://kit.fontawesome.com/793864380d.js" crossorigin="anonymous"></script>
+    <title>The Full Palette</title>
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__return">
-            <div class="header__image">
-                <img class="header__image-logo" src="./public/img/logo/ohmyfood@2x.svg" alt="ohmyfood logo">
+    <header>
+        <div class="container header__navigation">
+            <a href="./index.html"><i class="fas fa-arrow-left arrow"></i></a>
+            <div class="header__logo">
+                <img src="./public/img/logo/ohmyfood@2x.svg" alt="ohmyfood logo" />
             </div>
-            <div class="header__icon">
-                <a href="./index.html"><i class="fa-sharp fa-solid fa-arrow-left"></i></a>
-            </div>
+        </div>
+        <div class="header__img">
+            <img src="./public/img/restaurants/the_full_palette.jpg"
+                alt="Restaurant table with glasses of white wine and bread in a basket." />
         </div>
     </header>
-
-    <section class="menu">
-        <div class="menu__restaurant">
-            <div class="menu__image">
-                <img class="menu__restaurant-image" src="./public/img/resteraunts/the-full-palette.jpg"
-                    alt="The Full Palette Image">
-            </div>
-        </div>
-    </section>
-
-    <section class="menu__title">
-        <div class="menu__title-text">
+    <div class="container menu__background">
+        <div class="main__title">
             <h1>The Full Palette</h1>
         </div>
-        <div class="menu__title-icon">
-            <i class="fa-regular fa-heart menu-icon"></i>
+        <div class="main__icon--full"><i class="fas fa-heart"></i></div>
+        <div class="main__icon--empty"><i class="far fa-heart"></i></div>
+        <div class="menu__section">
+            <div class="main__subtitle fade-in-top">
+                <h2>ENTREES</h2>
+                <div class="menu__entrees">
+                    <div class="menu__item">
+                        <h3>Escargot</h3>
+                        <h4>With southern French spices</h4>
+                        <strong class="menu__price">25€</strong>
+                        <div class="overlay">
+                            <i class="fas fa-check-circle check"></i>
+                        </div>
+                    </div>
+                    <div class="menu__item">
+                        <h3>Duck Foie Gras</h3>
+                        <h4>With black truffle shavings</h4>
+                        <strong class="menu__price">35€</strong>
+                        <div class="overlay">
+                            <i class="fas fa-check-circle check"></i>
+                        </div>
+                    </div>
+                    <div class="menu__item">
+                        <h3>Fried egg</h3>
+                        <h4>with black pepper</h4>
+                        <strong class="menu__price">20€</strong>
+                        <div class="overlay">
+                            <i class="fas fa-check-circle check"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__subtitle fade-in-middle">
+                <h2>MAIN DISH</h2>
+                <div class="menu__main_dish">
+                    <div class="menu__item">
+                        <div>
+                            <h3>Herb-Encrusted Steak</h3>
+                        </div>
+                        <div>
+                            <h4>With delicately sliced and seasoned vegetables</h4>
+                        </div>
+                        <div class="menu__price"><strong>40€</strong></div>
+                        <div class="overlay">
+                            <i class="fas fa-check-circle check"></i>
+                        </div>
+                    </div>
+                    <div class="menu__item">
+                        <h3>Ox Tail Shepard's Pie</h3>
+                        <h4>with black truffle and pureed parsnips</h4>
+                        <strong class="menu__price">35€</strong>
+                        <div class="overlay">
+                            <i class="fas fa-check-circle check"></i>
+                        </div>
+                    </div>
+                    <div class="menu__item">
+                        <h3>Filet of Sole</h3>
+                        <h4>with citrus dressing</h4>
+                        <strong class="menu__price">44€</strong>
+                        <div class="overlay">
+                            <i class="fas fa-check-circle check"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__subtitle fade-in-bottom">
+                <h2>DESSERTS</h2>
+                <div class="menu__desserts">
+                    <div class="menu__item">
+                        <h3>Paris-Brest</h3>
+                        <h4>Revisited</h4>
+                        <strong class="menu__price">18€</strong>
+                        <div class="overlay">
+                            <i class="fas fa-check-circle check"></i>
+                        </div>
+                    </div>
+                    <div class="menu__item">
+                        <h3>Chocolate Macaroons</h3>
+                        <h4>With vanilla ice cream</h4>
+                        <strong class="menu__price">22€</strong>
+                        <div class="overlay">
+                            <i class="fas fa-check-circle check"></i>
+                        </div>
+                    </div>
+                    <div class="menu__item">
+                        <h3>Chocolate Mousse</h3>
+                        <h4>With spices and black truffle</h4>
+                        <strong class="menu__price">23€</strong>
+                        <div class="overlay">
+                            <i class="fas fa-check-circle check"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
-    <main class="selection">
-        <div class="selection__container">
-            <div class="selection__subtitle">
-                <h2 class="selection-title">ENTREES</h2>
-            </div>
-            <button class="selection__card">
-                <div class="selection__text">
-                    <div class="selection__text-container">
-                        <div class="selection__text-child1">
-                            <h3 class="selection__text--title">Escargot</h3>
-                        </div>
-                        <div class="selection__text-child2">
-                            <div class="selection__text-desc">
-                                With southern French spices
-                            </div>
-                            <div class="selection__text-price">
-                                25€
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="selection__animation">Hi Mum</div> -->
-            </button>
-            <button class="selection__card">
-                <div class="selection__text">
-                    <div class="selection__text-container">
-                        <div class="selection__text-child1">
-                            <h3 class="selection__text--title">Duck Foie Gras</h3>
-                        </div>
-                        <div class="selection__text-child2">
-                            <div class="selection__text-desc">
-                                With black truffle shavings
-                            </div>
-                            <div class="selection__text-price">
-                                35€
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="selection__animation">Hi Mum</div> -->
-                </div>
-            </button>
-            <button class="selection__card">
-                <div class="selection__text">
-                    <div class="selection__text-container">
-                        <div class="selection__text-child1">
-                            <h3 class="selection__text--title">Fried egg</h3>
-                        </div>
-                        <div class="selection__text-child2">
-                            <div class="selection__text-desc">
-                                Seasoned with truffle cream and salmon
-                            </div>
-                            <div class="selection__text-price">
-                                20€
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="selection__animation">Hi Mum</div> -->
-                </div>
-            </button>
-        </div>
-        <div class="selection__subtitle">
-            <h2 class="selection-title2">MAIN DISH</h2>
-        </div>
-        <button class="selection__card">
-            <div class="selection__text">
-                <div class="selection__text-container">
-                    <div class="selection__text-child1">
-                        <h3 class="selection__text--title">Herb-Encrusted Steak</h3>
-                    </div>
-                    <div class="selection__text-child2">
-                        <div class="selection__text-desc">
-                            With delicately sliced and seasoned vegetables
-                        </div>
-                        <div class="selection__text-price">
-                            40€
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- <div class="selection__animation">Hi Mum</div> -->
-        </button>
-        <button class="selection__card">
-            <div class="selection__text">
-                <div class="selection__text-container">
-                    <div class="selection__text-child1">
-                        <h3 class="selection__text--title">Ox Tail Shepard's Pie</h3>
-                    </div>
-                    <div class="selection__text-child2">
-                        <div class="selection__text-desc">
-                            With black truffle and pureed parsnips
-                        </div>
-                        <div class="selection__text-price">
-                            35€
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- <div class="selection__animation">Hi Mum</div> -->
-        </button>
-        <button class="selection__card">
-            <div class="selection__text">
-                <div class="selection__text-container">
-                    <div class="selection__text-child1">
-                        <h3 class="selection__text--title">Filet of Sole</h3>
-                    </div>
-                    <div class="selection__text-child2">
-                        <div class="selection__text-desc">
-                            With citrus dressing
-                        </div>
-                        <div class="selection__text-price">
-                            44€
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- <div class="selection__animation">Hi Mum</div> -->
-        </button>
-        <div class="selection__subtitle">
-            <h2 class="selection-title">DESSERTS</h2>
-        </div>
-        <button class="selection__card">
-            <div class="selection__text">
-                <div class="selection__text-container">
-                    <div class="selection__text-child1">
-                        <h3 class="selection__text--title">Paris-Brest</h3>
-                    </div>
-                    <div class="selection__text-child2">
-                        <div class="selection__text-desc">
-                            Revisted
-                        </div>
-                        <div class="selection__text-price">
-                            18€
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- <div class="selection__animation">Hi Mum</div> -->
-        </button>
-        <button class="selection__card">
-            <div class="selection__text">
-                <div class="selection__text-container">
-                    <div class="selection__text-child1">
-                        <h3 class="selection__text--title">Chocolate Macaroons</h3>
-                    </div>
-                    <div class="selection__text-child2">
-                        <div class="selection__text-desc">
-                            CWith vanilla ice cream
-                        </div>
-                        <div class="selection__text-price">
-                            22€
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- <div class="selection__animation">Hi Mum</div> -->
-        </button>
-        <button class="selection__card">
-            <div class="selection__text">
-                <div class="selection__text-container">
-                    <div class="selection__text-child1">
-                        <h3 class="selection__text--title">Chocolate Mousse</h3>
-                    </div>
-                    <div class="selection__text-child2">
-                        <div class="selection__text-desc">
-                            With spices and black truffle
-                        </div>
-                        <div class="selection__text-price">
-                            23€
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- <div class="selection__animation">Hi Mum</div> -->
-        </button>
-        <div class="btn__order btn btn--gradient">Order</div>
-    </main>
+        <div><button class="btn__order btn">Order</button></div>
+    </div>
     <footer>
+        <div class="container">
+            <a href="#">
+                <p class="footer__title">ohmyfood</p>
+            </a>
+            <a href="#"><i class="fas fa-utensils"></i>Suggest a restaurant</a>
+            <a href="#"><i class="fas fa-hands-helping"></i>Become a partner</a>
+            <a href="#">Legal</a>
+            <a href="mailto:contact@ohmyfood.com">Contact</a>
+        </div>
     </footer>
 </body>
 

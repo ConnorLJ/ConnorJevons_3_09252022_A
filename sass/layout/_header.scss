@@ -1,43 +1,42 @@
+header {
+	text-align: center;
+}
+
 .header {
-    &__logo {
-        padding-top: 1.5rem;
-        padding-bottom: 1rem;
-
-        @media screen and (min-width: map-get($breakpoints, desktop)) {
-            padding-left: 1rem;
-        }
-    }
-
-    &__location {
-        @include flex-centre;
-        width: 100%;
-        background-color: darken($color: $background-color, $amount: 5%);
-        box-shadow: 0 1.5px 5px rgba (o, o, o, 1) inset;
-
-        @media screen and (min-width: map-get($breakpoints, desktop)) {
-            width: 170px;
-            border-radius: 1.5rem;
-            gap: 1rem;
-            @include header-shadow;
-        }
-        // i {
-        //     padding-right: 1rem;
-        // }
-    }
-
-    &__return {
-        @include flex-centre;
-        padding-top: 1.5rem;
-        padding-bottom: 1rem;
-    }
-    &__image{
-        order: 2;
-    }
-    &__icon  {
-        position: absolute;
-        left: .5rem;
-        padding-left: 1rem;
-        font-size: 1.3rem;
-
-    }
+	&__explore {
+		background-color: $color-background;
+		display: flex;
+		flex-direction: column;
+		gap: 0.75rem;
+		height: 18rem;
+		padding-top: 1rem;
+	}
+	&__location {
+		background-color: darken($color: $color-background, $amount: 5%);
+		border: inset 0.1rem $color-background;
+		i {
+			padding-right: 1rem;
+		}
+	}
+	&__logo {
+		padding: 0.25rem 0;
+	}
+	&__navigation {
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		i {
+			position: relative;
+			right: 4rem;
+		}
+	}
+}
+.header__img {
+	img {
+		height: 15rem;
+		object-fit: cover;
+		width: 100%;
+		z-index: -1;
+	}
 }

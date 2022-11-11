@@ -1,11 +1,11 @@
 footer {
-	background-color: lighten($color: #000000, $amount: 20%);
+	background-color: lighten($color: #000000, $amount: 15);
 	.container {
 		display: flex;
 		flex-direction: column;
 		gap: 0.5rem;
-		height: 13rem;
-        margin-left: 2rem;
+		height: 13.5rem;
+		margin-left: 2rem;
 	}
 	i {
 		margin-right: 0.75rem;
@@ -15,13 +15,13 @@ footer {
 		margin-left: 0;
 	}
 }
-@media screen and (min-width: map-get($breakpoints, desktop)) {
+@include tablet-only {
 	footer {
 		.container {
 			flex-direction: row;
 			align-items: center;
 			justify-content: space-around;
-            margin-left: 0;
+			margin: 1rem;
 		}
 	}
 }

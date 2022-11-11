@@ -1,41 +1,140 @@
 .loader-background,
 .location {
-    animation: fade-in 2700ms ease-in;
+	animation: fade-in 2700ms ease-in;
 }
 
 .loader {
-    position: fixed;
-    left: 50%;
-    top: 25%;
-    border: 1rem solid $secondary-color;
-    border-top: 1rem solid $primary-color;
-    border-radius: 50%;
-    width: 20rem;
-    height: 20rem;
-    animation: spin 1100ms linear;
-    opacity: 0;
-    @media screen and (min-width: map-get($breakpoints, desktop)) {
-        width: 30rem;
-        height: 30rem;
-    }
+	position: fixed;
+	left: 50%;
+	top: 25%;
+	border: 1rem solid $color-secondary;
+	border-top: 1rem solid $color-primary;
+	border-radius: 50%;
+	width: 20rem;
+	height: 20rem;
+	animation: spin 1100ms linear;
+	opacity: 0;
+
+	@include desktop-only {
+		width: 30rem;
+		height: 30rem;
+	}
 }
 
-/* booking section */
+.nav {
+	&__title {
+		margin-left: 1.5rem;
+		margin-bottom: 1rem;
+		position: relative;
+		top: 2rem;
+	}
 
-.booking {
-    background-color: $background-color;
-    height: 18rem;
-    padding-top: 1rem;
+	&__card {
+		align-items: center;
+		display: flex;
+		gap: 1rem;
+		justify-content: flex-start;
+		margin: 1.5rem auto;
 
-    &__info {
-        @include flex-between;
-        flex-direction: column;
-        height: 100%;
-        text-align: center;
-        gap: 1rem;
+		i {
+			color: lighten($color: #000000, $amount: 50%);
+			font-size: 1.2rem;
+		}
 
-    }
+		p {
+			font-weight: 900;
+		}
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+	}
 }
 
-/* How it works section */
+.icon {
+	&__number {
+		position: relative;
+		right: 0.75rem;
+	}
 
+	&__new {
+		position: relative;
+		left: 12rem;
+		bottom: 18rem;
+		z-index: 1;
+	}
+}
+
+.restaurant__section a {
+	text-decoration: none;
+	color: black;
+}
+
+.restaurant__section {
+	.container {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+}
+
+.restaurant__section {
+	background-color: $color-background;
+	margin-top: 3rem;
+	padding-bottom: 5rem;
+	padding-top: 1rem;
+
+	.title {
+		margin-left: 1.5rem;
+	}
+}
+
+@include tablet-only {
+	.restaurant__section {
+		.container {
+			align-content: center;
+			justify-content: center;
+			flex-direction: row;
+			flex-wrap: wrap;
+			gap: 2rem;
+		}
+
+		.title {
+			text-align: center;
+		}
+	}
+
+	.nav {
+		&__title {
+			text-align: center;
+		}
+	}
+}
+
+@include desktop-only {
+	.restaurant__section {
+		.container {
+			flex-direction: row;
+			flex-wrap: nowrap;
+			gap: 1rem;
+			justify-content: center;
+		}
+	}
+
+	.nav {
+		&__list {
+			display: flex;
+			flex-direction: row;
+		}
+	}
+}
+
+@include desktop-only {
+	.restaurant__section {
+		.container {
+			gap: 2rem;
+		}
+	}
+}

@@ -1,111 +1,37 @@
-.menu {
+.menu__entrees,
+.menu__main_dish,
+.menu__desserts {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+.menu__background {
+	background-color: $color-background;
+	border-radius: 2.5rem 2.5rem 0 0;
+	margin-top: -3rem;
+	position: relative;
 
-    /*Menu top image */
-    &__restaurant {
-
-
-        @include tablet-only {
-            @include flex-centre;
-        }
-
-        &-image {
-            object-fit: contain;
-            height: 18rem;
-
-            @include tablet-only {
-                width: 160rem;
-                height: 24em;
-
-            }
-        }
-    }
-
-    &__title {
-        background-color: #eaeaea;
-        position: relative;
-        margin-top: -2.5rem;
-        border-radius: 2.5rem 2.5rem 0 0;
-        padding: 1rem 0rem;
-
-        @include tablet-only {
-            border-radius: 4.5rem 4.5rem 0 0;
-        }
-    }
+	h1,
+	h2 {
+		margin-left: 2rem;
+	}
+	.btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
-
-.selection {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    margin-top: 0;
-    gap: 1rem;
-    padding-left: 1rem;
-    background-color: #eaeaea;
-    height: 70rem;
-
-    &-title {
-        padding-right: 100rem;
-
-        @include tablet-only {
-            padding-right: 0;
-        }
-    }
-    &-title2 {
-        padding-right: 15rem;
-    }
-
-    &__card {
-        @include shadow;
-        background-color: white;
-        cursor: pointer;
-        border-style: none;
-        height: 4.5rem;
-        width: 339px;
-        border-radius: 15px;
-    }
-
-    &__text {
-        display: flex;
-        flex-direction: row;
-        padding-left: 1rem;
-        position: relative;
-
-        &-container {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            width: 262px;
-            height: 72px;
-        }
-
-        &-child1 {
-            padding-top: 1rem;
-        }
-
-        &-child2 {
-            @include flex-between;
-            align-items: center;
-            padding-top: .5rem;
-            padding-bottom: .5rem;
-        }
-
-        &-desc {
-            text-overflow: ellipsis;
-            overflow: hidden;
-            white-space: nowrap;
-            display: inline-block;
-        }
-
-        &-price {
-            position: absolute;
-            right: 1rem;
-        }
+.menu__section {
+	display: flex;
+	flex-direction: column;
 }
-}
-.btn__order {
-    height: 3rem;
-    margin: 4rem auto;
-    width: 11rem;
+@include desktop-only {
+	.menu {
+		&__section {
+			flex-direction: row;
+			justify-content: space-around;
+		}
+	}
 }
