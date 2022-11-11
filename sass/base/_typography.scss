@@ -104,9 +104,12 @@ h1 {
   &-title {
     line-height: 0;
   }
+  &-title2 {
+    font-size: 1rem;
+    font-weight: 100;
+  }
   &__text {
     font-size: 1rem;
-    line-height: .6rem;
     &-desc {
       font-weight: 100;
     }
@@ -115,6 +118,9 @@ h1 {
     }
     &--desc {
       font-size: .9rem;
+    }
+    &-child1 h3 {
+      margin: 0;
     }
   }
   &-title {
