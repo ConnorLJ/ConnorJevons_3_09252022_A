@@ -1,27 +1,18 @@
 .nav__card {
 	background-color: $color-background;
 	border-radius: 1.4rem;
-	-webkit-box-shadow: -1px 7px 15px 5px rgba(0, 0, 0, 0.2);
 	box-shadow: -1px 7px 15px 5px rgba(0, 0, 0, 0.2);
 	height: 4.5rem;
-	transform: scale(1);
-	transition: transform 400ms;
 	width: 20rem;
-	&:hover {
+
+	&.card-3 {
 		background-color: lighten($color: $color-primary, $amount: 35%);
-		box-shadow: -1px 7px 15px 5px rgba(0, 0, 0, 0.15);
-		transform: scale(1.07);
-		-webkit-box-shadow: -1px 7px 15px 5px rgba(0, 0, 0, 0.15);
-	}
-	&:hover .fas {
-		color: $color-primary;
 	}
 }
 .card {
 	&__restaurant {
 		background-color: white;
 		border-radius: 1rem;
-		-webkit-box-shadow: -1px 7px 15px 5px rgba(0, 0, 0, 0.3);
 		box-shadow: -1px 7px 15px 5px rgba(0, 0, 0, 0.3);
 		height: 15rem;
 		width: 20rem;
@@ -50,17 +41,16 @@
 	background-color: $color-tertiary;
 	border-radius: 0 1rem 1rem 0;
 	width: 0;
-	height: 4.27rem;
+	height: 3.75rem;
 	overflow: hidden;
 	transition: 0.3s linear;
 }
 .menu {
 	&__item {
-		-webkit-box-shadow: -1px 7px 15px 5px rgba(0, 0, 0, 0.05);
 		box-shadow: -1px 7px 15px 5px rgba(0, 0, 0, 0.05);
 		background-color: white;
 		border-radius: 1rem;
-		height: 3.25rem;
+		height: 3.75rem;
 		line-height: 0.9rem;
 		padding-bottom: 1rem;
 		padding-left: 1rem;
@@ -95,8 +85,8 @@
 			transition: 0.3s linear;
 		}
 		&:hover .overlay {
-			width: 4rem;
-			left: 15.2rem;
+			width: 3.5rem;
+			left: 14.5rem;
 			transition: 0.3s linear;
 		}
 		&:hover strong {
@@ -106,6 +96,8 @@
 		&:hover .check {
 			transform: rotate(-360deg);
 			transition-duration: 0.5s;
+			animation-fill-mode: forwards;
+			animation: 1s;
 		}
 	}
 	&__price {

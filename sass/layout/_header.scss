@@ -13,13 +13,13 @@ header {
 	}
 	&__location {
 		background-color: darken($color: $color-background, $amount: 5%);
-		border: inset 0.1rem $color-background;
+		border: inset 0.06rem $color-background;
 		i {
 			padding-right: 1rem;
 		}
 	}
 	&__logo {
-		padding: 0.25rem 0;
+		padding: 1rem 0 .5rem 0;
 	}
 	&__navigation {
 		align-items: center;

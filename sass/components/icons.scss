@@ -29,7 +29,7 @@
 .card__icon {
 	&--full {
 		background: -webkit-linear-gradient($color-primary, $color-secondary);
-		font-size: 2rem;
+		font-size: 1.5rem;
 		position: relative;
 		bottom: 3.5rem;
 		left: 15rem;
@@ -39,10 +39,10 @@
 		-webkit-text-fill-color: transparent;
 	}
 	&--empty {
-		font-size: 2rem;
+		font-size: 1.5rem;
 		background-color: white;
 		position: relative;
-		bottom: 5.5rem;
+		bottom: 5rem;
 		left: 15rem;
 		width: 2rem;
 		&:hover {
@@ -81,8 +81,6 @@
 	color: white;
 	border-radius: 50%;
 	font-size: 1.5rem;
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	white-space: nowrap;
 	transform: rotate(-90deg);

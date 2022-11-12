@@ -14,6 +14,7 @@
 	height: 20rem;
 	animation: spin 1100ms linear;
 	opacity: 0;
+	z-index: -1;
 
 	@include desktop-only {
 		width: 30rem;
@@ -36,11 +37,6 @@
 		justify-content: flex-start;
 		margin: 1.5rem auto;
 
-		i {
-			color: lighten($color: #000000, $amount: 50%);
-			font-size: 1.2rem;
-		}
-
 		p {
 			font-weight: 900;
 		}
@@ -49,7 +45,19 @@
 	&__list {
 		display: flex;
 		flex-direction: column;
+		@include desktop-only {
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			flex-wrap: wrap;
+			width: 98%;
+			padding-left: 2rem;
+		}
 	}
+}
+
+.icon--new {
+	color: $color-primary;
 }
 
 .icon {
@@ -88,6 +96,8 @@
 
 	.title {
 		margin-left: 1.5rem;
+		font-size: 1.5rem;
+		font-weight: 700;
 	}
 }
 
@@ -117,8 +127,8 @@
 	.restaurant__section {
 		.container {
 			flex-direction: row;
-			flex-wrap: nowrap;
-			gap: 1rem;
+			flex-wrap: wrap;
+			gap: 2rem;
 			justify-content: center;
 		}
 	}
