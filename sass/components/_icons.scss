@@ -61,11 +61,11 @@
 	&--empty i {
 		background-color: $color-background;
 		float: right;
-		font-size: 2rem;
+		font-size: 1.7rem;
 		font-weight: 100;
 		position: relative;
 		right: 2rem;
-		bottom: 5.5rem;
+		bottom: 4.7rem;
 
 		&:hover {
 			opacity: 0;
@@ -79,16 +79,16 @@
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		float: right;
-		font-size: 2rem;
+		font-size: 1.7rem;
 		position: relative;
 		right: 2rem;
-		bottom: 3.5rem;
+		bottom: 2.9rem;
 	}
 }
 
 .check {
 	color: white;
 	border-radius: 50%;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	white-space: nowrap;
 }
