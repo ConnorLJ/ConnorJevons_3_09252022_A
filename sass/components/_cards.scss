@@ -9,6 +9,7 @@
 		background-color: lighten($color: $color-primary, $amount: 35%);
 	}
 }
+
 .card {
 	&__restaurant {
 		background-color: white;
@@ -18,6 +19,7 @@
 		width: 20rem;
 		transition: transform 400ms;
 	}
+
 	&__restaurant img {
 		border-radius: 1rem 1rem 0rem 0rem;
 		height: 10rem;
@@ -25,11 +27,13 @@
 		position: relative;
 		width: 20rem;
 	}
+
 	&__text {
 		line-height: 0.5rem;
 		padding: 0 1rem;
 	}
 }
+
 .overlay {
 	display: flex;
 	align-items: center;
@@ -45,6 +49,7 @@
 	overflow: hidden;
 	transition: 0.3s linear;
 }
+
 .menu {
 	&__item {
 		box-shadow: -1px 7px 15px 5px rgba(0, 0, 0, 0.05);
@@ -55,17 +60,19 @@
 		padding-bottom: 1rem;
 		padding-left: 1rem;
 		width: 19rem;
+
 		strong {
 			transition: 0.3s linear;
 		}
+
 		h3 {
 			font-size: 0.9rem;
 			font-weight: 900;
 			overflow: hidden;
 			text-overflow: ellipsis;
 			white-space: nowrap;
-			transition: 0.5s linear;
 		}
+
 		h4 {
 			font-size: 0.8rem;
 			font-weight: 300;
@@ -74,32 +81,31 @@
 			overflow: hidden;
 			text-overflow: ellipsis;
 			white-space: nowrap;
-			transition: 0.5s linear;
+
 		}
+
 		&:hover h4 {
 			margin-right: 6rem;
-			transition: 0.3s linear;
 		}
+
 		&:hover h3 {
 			margin-right: 6rem;
-			transition: 0.3s linear;
 		}
+
 		&:hover .overlay {
 			width: 3.5rem;
 			left: 14.5rem;
-			transition: 0.3s linear;
 		}
+
 		&:hover strong {
 			margin-right: 4rem;
-			transition: 0.3s linear;
 		}
+
 		&:hover .check {
-			transform: rotate(-360deg);
-			transition-duration: 0.5s;
-			animation-fill-mode: forwards;
-			animation: 1s;
+			animation: spin-it 0.3s linear forwards;
 		}
 	}
+
 	&__price {
 		font-size: 0.8rem;
 		position: relative;
