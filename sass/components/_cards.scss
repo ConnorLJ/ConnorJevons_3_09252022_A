@@ -59,7 +59,9 @@
 		line-height: 0.9rem;
 		padding-bottom: 1rem;
 		padding-left: 1rem;
-		width: 19rem;
+		width: 20rem;
+		position: relative;
+		cursor: pointer;
 
 		strong {
 			transition: 0.3s linear;
@@ -73,7 +75,7 @@
 			white-space: nowrap;
 		}
 
-		h4 {
+		p {
 			font-size: 0.8rem;
 			font-weight: 300;
 			position: relative;
@@ -81,10 +83,10 @@
 			overflow: hidden;
 			text-overflow: ellipsis;
 			white-space: nowrap;
-
+			transition: 0.3s linear;
 		}
 
-		&:hover h4 {
+		&:hover p {
 			margin-right: 6rem;
 		}
 
@@ -94,7 +96,7 @@
 
 		&:hover .overlay {
 			width: 3.5rem;
-			left: 14.5rem;
+			left: 15.5rem;
 		}
 
 		&:hover strong {
@@ -108,9 +110,9 @@
 
 	&__price {
 		font-size: 0.8rem;
-		position: relative;
+		position: absolute;
 		height: 100%;
-		bottom: 3rem;
+		bottom: -2rem;
 		right: 0.5rem;
 	}
 }
