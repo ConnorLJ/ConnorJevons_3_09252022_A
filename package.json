@@ -4,7 +4,7 @@
   "description": "Project 3 on OpenClassrooms. Integrate a mobile website with animations in CSS for ohmyfood using HTML, CSS & Sass. This is the first project on OpenClassrooms using Git & Github for version control.",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/style.css --style compressed",
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style compressed",
     "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
   },
   "repository": {
