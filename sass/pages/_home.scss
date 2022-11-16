@@ -45,6 +45,7 @@
 	&__list {
 		display: flex;
 		flex-direction: column;
+
 		@include desktop-only {
 			flex-direction: column;
 			align-items: center;

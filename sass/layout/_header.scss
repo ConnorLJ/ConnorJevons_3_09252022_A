@@ -11,27 +11,33 @@ header {
 		height: 18rem;
 		padding-top: 1rem;
 	}
+
 	&__location {
 		background-color: darken($color: $color-background, $amount: 5%);
 		border: inset 0.06rem $color-background;
+
 		i {
 			padding-right: 1rem;
 		}
 	}
+
 	&__logo {
 		padding: 1rem 0 .5rem 0;
 	}
+
 	&__navigation {
 		align-items: center;
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
+
 		i {
 			position: relative;
 			right: 4rem;
 		}
 	}
 }
+
 .header__img {
 	img {
 		height: 15rem;

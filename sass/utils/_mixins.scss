@@ -26,6 +26,8 @@
     box-shadow: 0 .8rem .8rem rgba(0, 0, 0, 0.2)
 }
 
+/* Media queries */
+
 @mixin desktop-only {
     @media screen and (min-width: map-get($breakpoints, "desktop")) {
         @content;
